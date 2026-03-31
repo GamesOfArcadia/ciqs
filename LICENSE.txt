@@ -26,7 +26,7 @@ https://doi.org/10.5281/zenodo.19056796
 
 NO WARRANTY
 This software is provided "as is" without warranty of any kind.
-The authors are not liable for any damages arising from its use.
+The author is not liable for any damages arising from its use.
 
 TERMINATION
 This license terminates automatically upon any breach of its terms.
