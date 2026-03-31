@@ -10,8 +10,8 @@ Zero fidelity loss by construction.
 
 *Fridge still required if you insist on matter qubits though.*
 
----
 CIQA (1:5 quantum error correction) is not included in this distribution. Contact for licensing.
+---
 ---
 
 ## IBM Benchpress Results
