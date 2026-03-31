@@ -1,0 +1,4132 @@
+{
+    "machine_info": {
+        "node": "PC-01",
+        "processor": "AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD",
+        "machine": "AMD64",
+        "python_compiler": "MSC v.1942 64 bit (AMD64)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.12.9",
+        "python_version": "3.12.9",
+        "python_build": [
+            "tags/v3.12.9:fdb8142",
+            "Feb  4 2025 15:27:58"
+        ],
+        "release": "11",
+        "system": "Windows",
+        "cpu": {
+            "python_version": "3.12.9.final.0 (64 bit)",
+            "cpuinfo_version": [
+                9,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "9.0.0",
+            "arch": "X86_64",
+            "bits": 64,
+            "count": 8,
+            "arch_string_raw": "AMD64",
+            "vendor_id_raw": "AuthenticAMD",
+            "brand_raw": "AMD Ryzen 5 3400G with Radeon Vega Graphics",
+            "hz_actual_friendly": "3.7000 GHz",
+            "hz_actual": [
+                3700000000,
+                0
+            ],
+            "l2_cache_size": 2097152,
+            "stepping": 1,
+            "model": 24,
+            "family": 23,
+            "l3_cache_size": 4194304,
+            "hz_advertised_friendly": "3.6930 GHz",
+            "hz_advertised": [
+                3693000000,
+                0
+            ],
+            "flags": [
+                "3dnow",
+                "3dnowprefetch",
+                "abm",
+                "adx",
+                "aes",
+                "apic",
+                "avx",
+                "avx2",
+                "bmi1",
+                "bmi2",
+                "clflush",
+                "clflushopt",
+                "cmov",
+                "cmp_legacy",
+                "cr8_legacy",
+                "cx16",
+                "cx8",
+                "de",
+                "dts",
+                "f16c",
+                "fma",
+                "fpu",
+                "fxsr",
+                "ht",
+                "hypervisor",
+                "ia64",
+                "lahf_lm",
+                "lm",
+                "mca",
+                "mce",
+                "misalignsse",
+                "mmx",
+                "monitor",
+                "movbe",
+                "msr",
+                "mtrr",
+                "osvw",
+                "osxsave",
+                "pae",
+                "pat",
+                "pclmulqdq",
+                "perfctr_core",
+                "pge",
+                "pni",
+                "popcnt",
+                "pse",
+                "pse36",
+                "rdrnd",
+                "rdseed",
+                "sep",
+                "sepamd",
+                "serial",
+                "sha",
+                "smap",
+                "smep",
+                "ss",
+                "sse",
+                "sse2",
+                "sse4_1",
+                "sse4_2",
+                "sse4a",
+                "ssse3",
+                "tm",
+                "topoext",
+                "tsc",
+                "vme",
+                "wdt",
+                "xsave"
+            ],
+            "l2_cache_line_size": 512,
+            "l2_cache_associativity": 6
+        }
+    },
+    "commit_info": {
+        "id": "unknown",
+        "time": null,
+        "author_time": null,
+        "dirty": false,
+        "error": "FileNotFoundError(2, 'Le fichier sp\u00e9cifi\u00e9 est introuvable', None, 2, None)",
+        "project": "benchpress-main",
+        "branch": "(unknown)"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_100000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_100000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 739658,
+                "two_qubit_gate_depth": 666427,
+                "swap_count": 239663,
+                "gates_removed": 299997,
+                "placement_valid": false,
+                "n_qubits": 100000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 28.110641399995075,
+                "max": 33.89553270000033,
+                "mean": 30.29278331999667,
+                "stddev": 2.1773680241779383,
+                "rounds": 5,
+                "median": 30.056090699989,
+                "iqr": 2.1697524750015873,
+                "q1": 28.941514949998236,
+                "q3": 31.111267424999824,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 28.110641399995075,
+                "hd15iqr": 33.89553270000033,
+                "ops": 0.0330111627392088,
+                "total": 151.46391659998335,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_100000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_100000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 499995,
+                "two_qubit_gate_depth": 499995,
+                "swap_count": 0,
+                "gates_removed": 299997,
+                "placement_valid": true,
+                "n_qubits": 100000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 8.894479700000375,
+                "max": 9.09157899999991,
+                "mean": 8.995613339997362,
+                "stddev": 0.09120401686364822,
+                "rounds": 5,
+                "median": 8.977869399997871,
+                "iqr": 0.17140257499704603,
+                "q1": 8.917858024997258,
+                "q3": 9.089260599994304,
+                "iqr_outliers": 0,
+                "stddev_outliers": 3,
+                "outliers": "3;0",
+                "ld15iqr": 8.894479700000375,
+                "hd15iqr": 9.09157899999991,
+                "ops": 0.1111652938164518,
+                "total": 44.97806669998681,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_200000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_200000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 1530310,
+                "two_qubit_gate_depth": 1426591,
+                "swap_count": 530315,
+                "gates_removed": 599997,
+                "placement_valid": false,
+                "n_qubits": 200000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 76.06498599999759,
+                "max": 92.85744960000739,
+                "mean": 83.21868504000304,
+                "stddev": 6.486223842090916,
+                "rounds": 5,
+                "median": 83.9807232000021,
+                "iqr": 8.741737399992417,
+                "q1": 77.94078565000746,
+                "q3": 86.68252304999987,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 76.06498599999759,
+                "hd15iqr": 92.85744960000739,
+                "ops": 0.012016532098762462,
+                "total": 416.0934252000152,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_200000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_200000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 999995,
+                "two_qubit_gate_depth": 999995,
+                "swap_count": 0,
+                "gates_removed": 599997,
+                "placement_valid": true,
+                "n_qubits": 200000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 17.838712299999315,
+                "max": 20.403782000008505,
+                "mean": 18.835567940000328,
+                "stddev": 1.208147277869363,
+                "rounds": 5,
+                "median": 18.066864199994598,
+                "iqr": 2.054409474996646,
+                "q1": 17.953787500002363,
+                "q3": 20.00819697499901,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 17.838712299999315,
+                "hd15iqr": 20.403782000008505,
+                "ops": 0.05309104579089122,
+                "total": 94.17783970000164,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_300000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_300000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 2294266,
+                "two_qubit_gate_depth": 2131317,
+                "swap_count": 794271,
+                "gates_removed": 899997,
+                "placement_valid": false,
+                "n_qubits": 300000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 163.12720309999713,
+                "max": 166.13298740000755,
+                "mean": 164.40547658000142,
+                "stddev": 1.1356336341446835,
+                "rounds": 5,
+                "median": 164.2499070999911,
+                "iqr": 1.4809582500020042,
+                "q1": 163.6110266750038,
+                "q3": 165.09198492500582,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 163.12720309999713,
+                "hd15iqr": 166.13298740000755,
+                "ops": 0.006082522436613537,
+                "total": 822.0273829000071,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_300000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_300000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1499995,
+                "two_qubit_gate_depth": 1499995,
+                "swap_count": 0,
+                "gates_removed": 899997,
+                "placement_valid": true,
+                "n_qubits": 300000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 28.12494959999458,
+                "max": 31.210521800006973,
+                "mean": 29.115230640000664,
+                "stddev": 1.2066147981846123,
+                "rounds": 5,
+                "median": 28.664685700001428,
+                "iqr": 0.9715810250054346,
+                "q1": 28.522141949997604,
+                "q3": 29.49372297500304,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 28.12494959999458,
+                "hd15iqr": 31.210521800006973,
+                "ops": 0.03434628467706953,
+                "total": 145.57615320000332,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_400000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_400000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3032534,
+                "two_qubit_gate_depth": 2819396,
+                "swap_count": 1032539,
+                "gates_removed": 1199997,
+                "placement_valid": false,
+                "n_qubits": 400000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 239.49612759999582,
+                "max": 276.87468379999336,
+                "mean": 261.93024373999503,
+                "stddev": 13.921862141150616,
+                "rounds": 5,
+                "median": 265.7608765999903,
+                "iqr": 14.884401174986124,
+                "q1": 254.92397485000402,
+                "q3": 269.80837602499014,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 239.49612759999582,
+                "hd15iqr": 276.87468379999336,
+                "ops": 0.0038178103670710494,
+                "total": 1309.6512186999753,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_400000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_400000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1999995,
+                "two_qubit_gate_depth": 1999995,
+                "swap_count": 0,
+                "gates_removed": 1199997,
+                "placement_valid": true,
+                "n_qubits": 400000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 36.56240380000963,
+                "max": 38.79825369999162,
+                "mean": 37.52004411999951,
+                "stddev": 0.9588627981630405,
+                "rounds": 5,
+                "median": 37.11742709999089,
+                "iqr": 1.59890197499044,
+                "q1": 36.791432200006966,
+                "q3": 38.390334174997406,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 36.56240380000963,
+                "hd15iqr": 38.79825369999162,
+                "ops": 0.026652420684840417,
+                "total": 187.60022059999756,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_500000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_500000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3802616,
+                "two_qubit_gate_depth": 3533561,
+                "swap_count": 1302621,
+                "gates_removed": 1499997,
+                "placement_valid": false,
+                "n_qubits": 500000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 278.39523340000596,
+                "max": 286.00555780000286,
+                "mean": 281.57886871999943,
+                "stddev": 2.75570636748879,
+                "rounds": 5,
+                "median": 281.2604515999992,
+                "iqr": 2.2633526999889,
+                "q1": 280.2558353500026,
+                "q3": 282.5191880499915,
+                "iqr_outliers": 1,
+                "stddev_outliers": 2,
+                "outliers": "2;1",
+                "ld15iqr": 278.39523340000596,
+                "hd15iqr": 286.00555780000286,
+                "ops": 0.0035514028611088526,
+                "total": 1407.8943435999972,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_500000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_500000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2499995,
+                "two_qubit_gate_depth": 2499995,
+                "swap_count": 0,
+                "gates_removed": 1499997,
+                "placement_valid": true,
+                "n_qubits": 500000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 46.25498820000212,
+                "max": 51.50954239998828,
+                "mean": 48.46623553999816,
+                "stddev": 2.393726073379069,
+                "rounds": 5,
+                "median": 47.05527159999474,
+                "iqr": 4.040583724992757,
+                "q1": 46.76704027500455,
+                "q3": 50.807623999997304,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 46.25498820000212,
+                "hd15iqr": 51.50954239998828,
+                "ops": 0.020632920812979606,
+                "total": 242.3311776999908,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_600000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_600000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 4555794,
+                "two_qubit_gate_depth": 4248076,
+                "swap_count": 1555799,
+                "gates_removed": 1799997,
+                "placement_valid": false,
+                "n_qubits": 600000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 386.1619509000011,
+                "max": 407.9728599999944,
+                "mean": 393.01897171999735,
+                "stddev": 8.688848652582598,
+                "rounds": 5,
+                "median": 389.51836000000185,
+                "iqr": 8.55047034999734,
+                "q1": 388.0322490749968,
+                "q3": 396.58271942499414,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 386.1619509000011,
+                "hd15iqr": 407.9728599999944,
+                "ops": 0.0025444064331643524,
+                "total": 1965.0948585999868,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_600000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_600000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2999995,
+                "two_qubit_gate_depth": 2999995,
+                "swap_count": 0,
+                "gates_removed": 1799997,
+                "placement_valid": true,
+                "n_qubits": 600000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 54.40744669998821,
+                "max": 56.43430540000554,
+                "mean": 54.87562951999716,
+                "stddev": 0.8760982430120307,
+                "rounds": 5,
+                "median": 54.48205159998906,
+                "iqr": 0.6702695000021777,
+                "q1": 54.41546322499926,
+                "q3": 55.085732725001435,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 54.40744669998821,
+                "hd15iqr": 56.43430540000554,
+                "ops": 0.018223025571589866,
+                "total": 274.3781475999858,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_700000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_700000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5167358,
+                "two_qubit_gate_depth": 4869495,
+                "swap_count": 1667363,
+                "gates_removed": 2099997,
+                "placement_valid": false,
+                "n_qubits": 700000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 410.41311309998855,
+                "max": 466.0400209000072,
+                "mean": 429.11998701999835,
+                "stddev": 23.493149226168,
+                "rounds": 5,
+                "median": 415.35337929999514,
+                "iqr": 32.132523450003646,
+                "q1": 413.662913199998,
+                "q3": 445.79543665000165,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 410.41311309998855,
+                "hd15iqr": 466.0400209000072,
+                "ops": 0.002330350555201235,
+                "total": 2145.599935099992,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_700000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_700000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3499995,
+                "two_qubit_gate_depth": 3499995,
+                "swap_count": 0,
+                "gates_removed": 2099997,
+                "placement_valid": true,
+                "n_qubits": 700000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 62.84658509999281,
+                "max": 63.877525099989725,
+                "mean": 63.393387479995724,
+                "stddev": 0.37307178568048943,
+                "rounds": 5,
+                "median": 63.412148399991565,
+                "iqr": 0.4151721499947598,
+                "q1": 63.19443225000214,
+                "q3": 63.6096043999969,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 62.84658509999281,
+                "hd15iqr": 63.877525099989725,
+                "ops": 0.015774515919591104,
+                "total": 316.96693739997863,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_800000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_800000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5987026,
+                "two_qubit_gate_depth": 5566699,
+                "swap_count": 1987031,
+                "gates_removed": 2399997,
+                "placement_valid": false,
+                "n_qubits": 800000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 501.4579761000059,
+                "max": 504.08535629999824,
+                "mean": 502.78418419999946,
+                "stddev": 0.9848559569745075,
+                "rounds": 5,
+                "median": 502.81209419999504,
+                "iqr": 1.3500212999970245,
+                "q1": 502.10496630000125,
+                "q3": 503.4549875999983,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 501.4579761000059,
+                "hd15iqr": 504.08535629999824,
+                "ops": 0.001988924933251711,
+                "total": 2513.920920999997,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_800000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_800000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3999995,
+                "two_qubit_gate_depth": 3999995,
+                "swap_count": 0,
+                "gates_removed": 2399997,
+                "placement_valid": true,
+                "n_qubits": 800000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 71.74664719999419,
+                "max": 72.79069579999486,
+                "mean": 72.23651019999815,
+                "stddev": 0.41850435092804716,
+                "rounds": 5,
+                "median": 72.09527780000644,
+                "iqr": 0.6443083499907516,
+                "q1": 71.95123752500149,
+                "q3": 72.59554587499224,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 71.74664719999419,
+                "hd15iqr": 72.79069579999486,
+                "ops": 0.013843415154349822,
+                "total": 361.1825509999908,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_900000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_900000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 6554628,
+                "two_qubit_gate_depth": 6199196,
+                "swap_count": 2054633,
+                "gates_removed": 2699997,
+                "placement_valid": false,
+                "n_qubits": 900000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 538.5303005000023,
+                "max": 550.4545214999962,
+                "mean": 545.1569997400017,
+                "stddev": 4.3530050270162794,
+                "rounds": 5,
+                "median": 545.9771406999935,
+                "iqr": 4.822924899992358,
+                "q1": 542.7702788000097,
+                "q3": 547.593203700002,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 538.5303005000023,
+                "hd15iqr": 550.4545214999962,
+                "ops": 0.0018343339633847201,
+                "total": 2725.784998700008,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_900000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_900000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4499995,
+                "two_qubit_gate_depth": 4499995,
+                "swap_count": 0,
+                "gates_removed": 2699997,
+                "placement_valid": true,
+                "n_qubits": 900000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 80.37318660000165,
+                "max": 82.79407689999789,
+                "mean": 81.07017876000027,
+                "stddev": 0.9819831219498115,
+                "rounds": 5,
+                "median": 80.74591670000518,
+                "iqr": 0.8364864249924722,
+                "q1": 80.51680732500245,
+                "q3": 81.35329374999492,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 80.37318660000165,
+                "hd15iqr": 82.79407689999789,
+                "ops": 0.01233499192052351,
+                "total": 405.35089380000136,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_1000000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_1000000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 7513506,
+                "two_qubit_gate_depth": 7002981,
+                "swap_count": 2513511,
+                "gates_removed": 2999997,
+                "placement_valid": false,
+                "n_qubits": 1000000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 710.6103378999978,
+                "max": 718.6762479000026,
+                "mean": 713.6252507400001,
+                "stddev": 3.112470821743469,
+                "rounds": 5,
+                "median": 712.5126700999972,
+                "iqr": 3.68793844999891,
+                "q1": 711.6894781750016,
+                "q3": 715.3774166250005,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 710.6103378999978,
+                "hd15iqr": 718.6762479000026,
+                "ops": 0.0014012957066233869,
+                "total": 3568.1262537000002,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QV_scale[Heisenberg_1000000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QV_scale[Heisenberg_1000000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4999995,
+                "two_qubit_gate_depth": 4999995,
+                "swap_count": 0,
+                "gates_removed": 2999997,
+                "placement_valid": true,
+                "n_qubits": 1000000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 90.29840879999392,
+                "max": 107.4972310000012,
+                "mean": 93.99934282000177,
+                "stddev": 7.548320067659623,
+                "rounds": 5,
+                "median": 90.70313120000355,
+                "iqr": 4.463362375001452,
+                "q1": 90.55450245000247,
+                "q3": 95.01786482500393,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 90.29840879999392,
+                "hd15iqr": 107.4972310000012,
+                "ops": 0.010638372248143142,
+                "total": 469.99671410000883,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_100000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_100000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 739658,
+                "two_qubit_gate_depth": 666427,
+                "swap_count": 239663,
+                "gates_removed": 299997,
+                "placement_valid": false,
+                "n_qubits": 100000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 31.01313880000089,
+                "max": 32.777553299994906,
+                "mean": 31.733377359999576,
+                "stddev": 0.7750232058338988,
+                "rounds": 5,
+                "median": 31.38761030000751,
+                "iqr": 1.3117523749970132,
+                "q1": 31.126179474998935,
+                "q3": 32.43793184999595,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 31.01313880000089,
+                "hd15iqr": 32.777553299994906,
+                "ops": 0.031512561321648536,
+                "total": 158.66688679999788,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_100000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_100000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 499995,
+                "two_qubit_gate_depth": 499995,
+                "swap_count": 0,
+                "gates_removed": 299997,
+                "placement_valid": true,
+                "n_qubits": 100000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 9.016188599998713,
+                "max": 9.164328900005785,
+                "mean": 9.0688483200036,
+                "stddev": 0.06759697670311123,
+                "rounds": 5,
+                "median": 9.029130900002201,
+                "iqr": 0.11056207499859738,
+                "q1": 9.0177561000055,
+                "q3": 9.128318175004097,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 9.016188599998713,
+                "hd15iqr": 9.164328900005785,
+                "ops": 0.11026758467161166,
+                "total": 45.344241600017995,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_200000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_200000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 1530310,
+                "two_qubit_gate_depth": 1426591,
+                "swap_count": 530315,
+                "gates_removed": 599997,
+                "placement_valid": false,
+                "n_qubits": 200000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 80.16022640001029,
+                "max": 92.2849692000018,
+                "mean": 83.3746861600026,
+                "stddev": 5.252571470080724,
+                "rounds": 5,
+                "median": 80.20253850000154,
+                "iqr": 5.913595374997385,
+                "q1": 80.18348802500259,
+                "q3": 86.09708339999997,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 80.16022640001029,
+                "hd15iqr": 92.2849692000018,
+                "ops": 0.011994048146471233,
+                "total": 416.873430800013,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_200000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_200000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 999995,
+                "two_qubit_gate_depth": 999995,
+                "swap_count": 0,
+                "gates_removed": 599997,
+                "placement_valid": true,
+                "n_qubits": 200000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 16.972957399993902,
+                "max": 19.705340100001195,
+                "mean": 17.6781272799999,
+                "stddev": 1.1523495494396372,
+                "rounds": 5,
+                "median": 17.119022600003518,
+                "iqr": 1.0204224999906728,
+                "q1": 17.04706955000438,
+                "q3": 18.067492049995053,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 16.972957399993902,
+                "hd15iqr": 19.705340100001195,
+                "ops": 0.056567077731776896,
+                "total": 88.3906363999995,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_300000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_300000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 2294266,
+                "two_qubit_gate_depth": 2131317,
+                "swap_count": 794271,
+                "gates_removed": 899997,
+                "placement_valid": false,
+                "n_qubits": 300000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 135.73459400000866,
+                "max": 152.205993399999,
+                "mean": 141.59569512000309,
+                "stddev": 6.750428736178673,
+                "rounds": 5,
+                "median": 138.5326924999972,
+                "iqr": 9.371984525005246,
+                "q1": 136.87102955000228,
+                "q3": 146.24301407500752,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 135.73459400000866,
+                "hd15iqr": 152.205993399999,
+                "ops": 0.007062361600417971,
+                "total": 707.9784756000154,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_300000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_300000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1499995,
+                "two_qubit_gate_depth": 1499995,
+                "swap_count": 0,
+                "gates_removed": 899997,
+                "placement_valid": true,
+                "n_qubits": 300000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 25.822428100000252,
+                "max": 29.162771700008307,
+                "mean": 26.719549780001397,
+                "stddev": 1.3821446037972749,
+                "rounds": 5,
+                "median": 26.09877709999273,
+                "iqr": 1.0807836499989207,
+                "q1": 26.025422650003748,
+                "q3": 27.10620630000267,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 25.822428100000252,
+                "hd15iqr": 29.162771700008307,
+                "ops": 0.03742578030818705,
+                "total": 133.597748900007,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_400000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_400000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3032534,
+                "two_qubit_gate_depth": 2819396,
+                "swap_count": 1032539,
+                "gates_removed": 1199997,
+                "placement_valid": false,
+                "n_qubits": 400000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 194.78464160001022,
+                "max": 198.69088960000954,
+                "mean": 196.68683875999704,
+                "stddev": 1.4794432566713012,
+                "rounds": 5,
+                "median": 196.67494649998844,
+                "iqr": 2.0971772750090167,
+                "q1": 195.61724629998935,
+                "q3": 197.71442357499836,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 194.78464160001022,
+                "hd15iqr": 198.69088960000954,
+                "ops": 0.005084224274000503,
+                "total": 983.4341937999852,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_400000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_400000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1999995,
+                "two_qubit_gate_depth": 1999995,
+                "swap_count": 0,
+                "gates_removed": 1199997,
+                "placement_valid": true,
+                "n_qubits": 400000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 35.27321379998466,
+                "max": 40.0772266999993,
+                "mean": 36.502575580001576,
+                "stddev": 2.0102650151963295,
+                "rounds": 5,
+                "median": 35.67169190000277,
+                "iqr": 1.4080922499924782,
+                "q1": 35.52378850000969,
+                "q3": 36.931880750002165,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 35.27321379998466,
+                "hd15iqr": 40.0772266999993,
+                "ops": 0.027395327154609423,
+                "total": 182.51287790000788,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_500000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_500000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3802616,
+                "two_qubit_gate_depth": 3533561,
+                "swap_count": 1302621,
+                "gates_removed": 1499997,
+                "placement_valid": false,
+                "n_qubits": 500000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 270.41703929999494,
+                "max": 275.59821710002143,
+                "mean": 272.46844707999844,
+                "stddev": 2.004432285924018,
+                "rounds": 5,
+                "median": 271.62688880000496,
+                "iqr": 2.5189683500211686,
+                "q1": 271.25495669998054,
+                "q3": 273.7739250500017,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 270.41703929999494,
+                "hd15iqr": 275.59821710002143,
+                "ops": 0.0036701497392334524,
+                "total": 1362.3422353999922,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_500000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_500000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2499995,
+                "two_qubit_gate_depth": 2499995,
+                "swap_count": 0,
+                "gates_removed": 1499997,
+                "placement_valid": true,
+                "n_qubits": 500000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 44.65933339999174,
+                "max": 51.2293882999802,
+                "mean": 46.07143351999112,
+                "stddev": 2.8878868844301837,
+                "rounds": 5,
+                "median": 44.719414599996526,
+                "iqr": 1.918811999988975,
+                "q1": 44.68257094999717,
+                "q3": 46.601382949986146,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 44.65933339999174,
+                "hd15iqr": 51.2293882999802,
+                "ops": 0.02170542402519523,
+                "total": 230.35716759995557,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_600000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_600000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 4555794,
+                "two_qubit_gate_depth": 4248076,
+                "swap_count": 1555799,
+                "gates_removed": 1799997,
+                "placement_valid": false,
+                "n_qubits": 600000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 351.1211514000024,
+                "max": 353.4534108999942,
+                "mean": 352.3457875200023,
+                "stddev": 0.8798067355065519,
+                "rounds": 5,
+                "median": 352.2213103999966,
+                "iqr": 1.187755750019278,
+                "q1": 351.8278417499969,
+                "q3": 353.01559750001616,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 351.1211514000024,
+                "hd15iqr": 353.4534108999942,
+                "ops": 0.002838121060105567,
+                "total": 1761.7289376000117,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_600000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_600000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2999995,
+                "two_qubit_gate_depth": 2999995,
+                "swap_count": 0,
+                "gates_removed": 1799997,
+                "placement_valid": true,
+                "n_qubits": 600000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 53.55859270002111,
+                "max": 54.27659319998929,
+                "mean": 53.88492912000511,
+                "stddev": 0.29899756237530917,
+                "rounds": 5,
+                "median": 53.944201700011035,
+                "iqr": 0.49131637500977376,
+                "q1": 53.60071179999795,
+                "q3": 54.09202817500773,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 53.55859270002111,
+                "hd15iqr": 54.27659319998929,
+                "ops": 0.018558064682110603,
+                "total": 269.42464560002554,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_700000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_700000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5167358,
+                "two_qubit_gate_depth": 4869495,
+                "swap_count": 1667363,
+                "gates_removed": 2099997,
+                "placement_valid": false,
+                "n_qubits": 700000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 407.81672440000693,
+                "max": 410.7878290999797,
+                "mean": 408.86442965999595,
+                "stddev": 1.2023692222793771,
+                "rounds": 5,
+                "median": 408.5530568000104,
+                "iqr": 1.6486525749787688,
+                "q1": 407.93794465000246,
+                "q3": 409.58659722498123,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 407.81672440000693,
+                "hd15iqr": 410.7878290999797,
+                "ops": 0.0024457984785606845,
+                "total": 2044.3221482999797,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_700000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_700000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3499995,
+                "two_qubit_gate_depth": 3499995,
+                "swap_count": 0,
+                "gates_removed": 2099997,
+                "placement_valid": true,
+                "n_qubits": 700000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 62.67739630001597,
+                "max": 63.07077879999997,
+                "mean": 62.84979710000334,
+                "stddev": 0.15322172977586815,
+                "rounds": 5,
+                "median": 62.80459499999415,
+                "iqr": 0.22068397501425352,
+                "q1": 62.74426067499735,
+                "q3": 62.9649446500116,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 62.67739630001597,
+                "hd15iqr": 63.07077879999997,
+                "ops": 0.01591095033145217,
+                "total": 314.2489855000167,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_800000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_800000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5987026,
+                "two_qubit_gate_depth": 5566699,
+                "swap_count": 1987031,
+                "gates_removed": 2399997,
+                "placement_valid": false,
+                "n_qubits": 800000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 501.52820850000717,
+                "max": 506.11280350000015,
+                "mean": 504.15719727999533,
+                "stddev": 1.7157411850296846,
+                "rounds": 5,
+                "median": 504.5968893999816,
+                "iqr": 2.1057143500074744,
+                "q1": 503.10780119999254,
+                "q3": 505.21351555,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 501.52820850000717,
+                "hd15iqr": 506.11280350000015,
+                "ops": 0.0019835083291385148,
+                "total": 2520.7859863999765,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_800000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_800000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3999995,
+                "two_qubit_gate_depth": 3999995,
+                "swap_count": 0,
+                "gates_removed": 2399997,
+                "placement_valid": true,
+                "n_qubits": 800000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 72.00651700000162,
+                "max": 72.93832069999189,
+                "mean": 72.26398018000182,
+                "stddev": 0.3848619792276158,
+                "rounds": 5,
+                "median": 72.15334920000168,
+                "iqr": 0.35067902498849435,
+                "q1": 72.02590795001015,
+                "q3": 72.37658697499865,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 72.00651700000162,
+                "hd15iqr": 72.93832069999189,
+                "ops": 0.013838152804607597,
+                "total": 361.3199009000091,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_900000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_900000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 6554628,
+                "two_qubit_gate_depth": 6199196,
+                "swap_count": 2054633,
+                "gates_removed": 2699997,
+                "placement_valid": false,
+                "n_qubits": 900000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 542.7856261999987,
+                "max": 551.8233624999993,
+                "mean": 545.1056292800058,
+                "stddev": 3.7998713338889267,
+                "rounds": 5,
+                "median": 543.6014696000202,
+                "iqr": 3.20625575001759,
+                "q1": 542.967128749995,
+                "q3": 546.1733845000126,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 542.7856261999987,
+                "hd15iqr": 551.8233624999993,
+                "ops": 0.0018345068300263828,
+                "total": 2725.528146400029,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_900000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_900000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4499995,
+                "two_qubit_gate_depth": 4499995,
+                "swap_count": 0,
+                "gates_removed": 2699997,
+                "placement_valid": true,
+                "n_qubits": 900000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 80.78480550000677,
+                "max": 81.84383389999857,
+                "mean": 81.05333140000002,
+                "stddev": 0.45122297178940135,
+                "rounds": 5,
+                "median": 80.8364622000081,
+                "iqr": 0.42849364998255624,
+                "q1": 80.7899163750044,
+                "q3": 81.21841002498695,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 80.78480550000677,
+                "hd15iqr": 81.84383389999857,
+                "ops": 0.012337555813282707,
+                "total": 405.2666570000001,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_1000000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_1000000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 7513506,
+                "two_qubit_gate_depth": 7002981,
+                "swap_count": 2513511,
+                "gates_removed": 2999997,
+                "placement_valid": false,
+                "n_qubits": 1000000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 716.4716300999862,
+                "max": 717.1214680999983,
+                "mean": 716.878640959994,
+                "stddev": 0.24319030095735167,
+                "rounds": 5,
+                "median": 716.9186235999805,
+                "iqr": 0.2168711000267649,
+                "q1": 716.7962578499864,
+                "q3": 717.0131289500132,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 716.4716300999862,
+                "hd15iqr": 717.1214680999983,
+                "ops": 0.001394936245639666,
+                "total": 3584.3932047999697,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_QAOA_scale[Heisenberg_1000000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_QAOA_scale[Heisenberg_1000000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4999995,
+                "two_qubit_gate_depth": 4999995,
+                "swap_count": 0,
+                "gates_removed": 2999997,
+                "placement_valid": true,
+                "n_qubits": 1000000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 91.82852760000969,
+                "max": 109.75896229999489,
+                "mean": 97.99216701999539,
+                "stddev": 8.29431925223055,
+                "rounds": 5,
+                "median": 92.68663969999761,
+                "iqr": 13.391023550000682,
+                "q1": 91.88543902499077,
+                "q3": 105.27646257499146,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 91.82852760000969,
+                "hd15iqr": 109.75896229999489,
+                "ops": 0.010204897293433149,
+                "total": 489.960835099977,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_100000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_100000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 739658,
+                "two_qubit_gate_depth": 666427,
+                "swap_count": 239663,
+                "gates_removed": 299997,
+                "placement_valid": false,
+                "n_qubits": 100000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 31.93817070001387,
+                "max": 32.6059328999836,
+                "mean": 32.38643313999637,
+                "stddev": 0.26311307497364655,
+                "rounds": 5,
+                "median": 32.480510399997,
+                "iqr": 0.27233617498131935,
+                "q1": 32.27217675000429,
+                "q3": 32.54451292498561,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 31.93817070001387,
+                "hd15iqr": 32.6059328999836,
+                "ops": 0.030877126717762167,
+                "total": 161.93216569998185,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_100000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_100000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 499995,
+                "two_qubit_gate_depth": 499995,
+                "swap_count": 0,
+                "gates_removed": 299997,
+                "placement_valid": true,
+                "n_qubits": 100000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 9.108763800002635,
+                "max": 11.367953400011174,
+                "mean": 9.65366274000844,
+                "stddev": 0.9609136910110258,
+                "rounds": 5,
+                "median": 9.266027500008931,
+                "iqr": 0.6107925000032992,
+                "q1": 9.201281775007374,
+                "q3": 9.812074275010673,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 9.108763800002635,
+                "hd15iqr": 11.367953400011174,
+                "ops": 0.10358762543626272,
+                "total": 48.2683137000422,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_200000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_200000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 1530310,
+                "two_qubit_gate_depth": 1426591,
+                "swap_count": 530315,
+                "gates_removed": 599997,
+                "placement_valid": false,
+                "n_qubits": 200000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 88.16327560000354,
+                "max": 95.60865530002047,
+                "mean": 90.76473466000752,
+                "stddev": 2.957869767448992,
+                "rounds": 5,
+                "median": 89.64317789999768,
+                "iqr": 3.6609431499964558,
+                "q1": 88.79423147501075,
+                "q3": 92.4551746250072,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 88.16327560000354,
+                "hd15iqr": 95.60865530002047,
+                "ops": 0.01101749488659737,
+                "total": 453.8236733000376,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_200000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_200000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 999995,
+                "two_qubit_gate_depth": 999995,
+                "swap_count": 0,
+                "gates_removed": 599997,
+                "placement_valid": true,
+                "n_qubits": 200000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 17.014363599999342,
+                "max": 17.40927279999596,
+                "mean": 17.179947640007594,
+                "stddev": 0.15666822965556917,
+                "rounds": 5,
+                "median": 17.117697100009536,
+                "iqr": 0.22554337499605026,
+                "q1": 17.074584625013813,
+                "q3": 17.300128000009863,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 17.014363599999342,
+                "hd15iqr": 17.40927279999596,
+                "ops": 0.058207395095387957,
+                "total": 85.89973820003797,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_300000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_300000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 2294266,
+                "two_qubit_gate_depth": 2131317,
+                "swap_count": 794271,
+                "gates_removed": 899997,
+                "placement_valid": false,
+                "n_qubits": 300000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 139.52462599999853,
+                "max": 159.2741066000017,
+                "mean": 149.38982716000174,
+                "stddev": 8.704576746500187,
+                "rounds": 5,
+                "median": 146.44280869999784,
+                "iqr": 15.280091325032117,
+                "q1": 142.85014384998794,
+                "q3": 158.13023517502006,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 139.52462599999853,
+                "hd15iqr": 159.2741066000017,
+                "ops": 0.006693896224466242,
+                "total": 746.9491358000087,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_300000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_300000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1499995,
+                "two_qubit_gate_depth": 1499995,
+                "swap_count": 0,
+                "gates_removed": 899997,
+                "placement_valid": true,
+                "n_qubits": 300000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 26.980970800010255,
+                "max": 30.730580300005386,
+                "mean": 28.08165397999692,
+                "stddev": 1.5998849558708748,
+                "rounds": 5,
+                "median": 27.218813399987994,
+                "iqr": 2.0142891249997774,
+                "q1": 27.011013849994924,
+                "q3": 29.025302974994702,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 26.980970800010255,
+                "hd15iqr": 30.730580300005386,
+                "ops": 0.03561043807150101,
+                "total": 140.4082698999846,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_400000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_400000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3032534,
+                "two_qubit_gate_depth": 2819396,
+                "swap_count": 1032539,
+                "gates_removed": 1199997,
+                "placement_valid": false,
+                "n_qubits": 400000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 219.21337479999056,
+                "max": 227.56014940000023,
+                "mean": 223.67968298000633,
+                "stddev": 3.788597211848491,
+                "rounds": 5,
+                "median": 224.5215449000243,
+                "iqr": 7.023772499996994,
+                "q1": 219.99855895000655,
+                "q3": 227.02233145000355,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 219.21337479999056,
+                "hd15iqr": 227.56014940000023,
+                "ops": 0.004470678725386898,
+                "total": 1118.3984149000316,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_400000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_400000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1999995,
+                "two_qubit_gate_depth": 1999995,
+                "swap_count": 0,
+                "gates_removed": 1199997,
+                "placement_valid": true,
+                "n_qubits": 400000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 35.740318600001046,
+                "max": 43.96111020000535,
+                "mean": 39.299050640000495,
+                "stddev": 3.9628521491832505,
+                "rounds": 5,
+                "median": 36.96584089999669,
+                "iqr": 7.05463767497713,
+                "q1": 36.370853575012006,
+                "q3": 43.425491249989136,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 35.740318600001046,
+                "hd15iqr": 43.96111020000535,
+                "ops": 0.0254459073111082,
+                "total": 196.49525320000248,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_500000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_500000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3802616,
+                "two_qubit_gate_depth": 3533561,
+                "swap_count": 1302621,
+                "gates_removed": 1499997,
+                "placement_valid": false,
+                "n_qubits": 500000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 296.5660208000045,
+                "max": 387.20702880001045,
+                "mean": 336.8621245599992,
+                "stddev": 33.01395357898282,
+                "rounds": 5,
+                "median": 333.1153575000062,
+                "iqr": 36.38353412500874,
+                "q1": 317.5631950249881,
+                "q3": 353.9467291499968,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 296.5660208000045,
+                "hd15iqr": 387.20702880001045,
+                "ops": 0.0029685735708820772,
+                "total": 1684.310622799996,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_500000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_500000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2499995,
+                "two_qubit_gate_depth": 2499995,
+                "swap_count": 0,
+                "gates_removed": 1499997,
+                "placement_valid": true,
+                "n_qubits": 500000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 47.28184520002105,
+                "max": 55.278653899993515,
+                "mean": 50.3065452000068,
+                "stddev": 3.324965183633719,
+                "rounds": 5,
+                "median": 50.238585400016746,
+                "iqr": 5.106070499998168,
+                "q1": 47.29214270000375,
+                "q3": 52.39821320000192,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 47.28184520002105,
+                "hd15iqr": 55.278653899993515,
+                "ops": 0.01987812909879299,
+                "total": 251.53272600003402,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_600000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_600000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 4555794,
+                "two_qubit_gate_depth": 4248076,
+                "swap_count": 1555799,
+                "gates_removed": 1799997,
+                "placement_valid": false,
+                "n_qubits": 600000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 413.5047326000058,
+                "max": 440.62134610000066,
+                "mean": 426.72254883999705,
+                "stddev": 12.396499820323383,
+                "rounds": 5,
+                "median": 424.1544698999787,
+                "iqr": 23.156996674988477,
+                "q1": 415.93683485000656,
+                "q3": 439.09383152499504,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 413.5047326000058,
+                "hd15iqr": 440.62134610000066,
+                "ops": 0.002343443070253496,
+                "total": 2133.612744199985,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_600000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_600000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2999995,
+                "two_qubit_gate_depth": 2999995,
+                "swap_count": 0,
+                "gates_removed": 1799997,
+                "placement_valid": true,
+                "n_qubits": 600000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 54.96461569998064,
+                "max": 57.74851519998629,
+                "mean": 56.17209853999666,
+                "stddev": 1.2461913160962617,
+                "rounds": 5,
+                "median": 55.44147510000039,
+                "iqr": 2.0665048499868135,
+                "q1": 55.32059645000845,
+                "q3": 57.387101299995265,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 54.96461569998064,
+                "hd15iqr": 57.74851519998629,
+                "ops": 0.017802432630996724,
+                "total": 280.8604926999833,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_700000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_700000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5167358,
+                "two_qubit_gate_depth": 4869495,
+                "swap_count": 1667363,
+                "gates_removed": 2099997,
+                "placement_valid": false,
+                "n_qubits": 700000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 462.18482049999875,
+                "max": 552.9484697000007,
+                "mean": 505.788593400002,
+                "stddev": 34.61092063451417,
+                "rounds": 5,
+                "median": 508.53611190000083,
+                "iqr": 49.50073592498666,
+                "q1": 479.1188801500102,
+                "q3": 528.6196160749969,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 462.18482049999875,
+                "hd15iqr": 552.9484697000007,
+                "ops": 0.0019771106210162235,
+                "total": 2528.94296700001,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_700000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_700000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3499995,
+                "two_qubit_gate_depth": 3499995,
+                "swap_count": 0,
+                "gates_removed": 2099997,
+                "placement_valid": true,
+                "n_qubits": 700000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 64.5493209999986,
+                "max": 67.29903890000423,
+                "mean": 65.92324124000152,
+                "stddev": 1.0386471712491694,
+                "rounds": 5,
+                "median": 66.19162050000159,
+                "iqr": 1.37981312500051,
+                "q1": 65.13222310000128,
+                "q3": 66.5120362250018,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 64.5493209999986,
+                "hd15iqr": 67.29903890000423,
+                "ops": 0.015169157055845893,
+                "total": 329.6162062000076,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_800000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_800000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5987026,
+                "two_qubit_gate_depth": 5566699,
+                "swap_count": 1987031,
+                "gates_removed": 2399997,
+                "placement_valid": false,
+                "n_qubits": 800000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 598.7575857999909,
+                "max": 652.5505137,
+                "mean": 621.5689777399937,
+                "stddev": 19.452358262281397,
+                "rounds": 5,
+                "median": 619.0261026999797,
+                "iqr": 16.97602400001051,
+                "q1": 611.9920078749929,
+                "q3": 628.9680318750034,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 598.7575857999909,
+                "hd15iqr": 652.5505137,
+                "ops": 0.0016088319009033723,
+                "total": 3107.8448886999686,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_800000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_800000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3999995,
+                "two_qubit_gate_depth": 3999995,
+                "swap_count": 0,
+                "gates_removed": 2399997,
+                "placement_valid": true,
+                "n_qubits": 800000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 73.71962610000628,
+                "max": 80.09502849998535,
+                "mean": 75.6904398600047,
+                "stddev": 2.6246793311714383,
+                "rounds": 5,
+                "median": 74.67733020000742,
+                "iqr": 3.1797849249851424,
+                "q1": 73.87201980001555,
+                "q3": 77.0518047250007,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 73.71962610000628,
+                "hd15iqr": 80.09502849998535,
+                "ops": 0.01321170813446952,
+                "total": 378.4521993000235,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_900000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_900000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 6554628,
+                "two_qubit_gate_depth": 6199196,
+                "swap_count": 2054633,
+                "gates_removed": 2699997,
+                "placement_valid": false,
+                "n_qubits": 900000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 649.0777530999912,
+                "max": 711.9279977999977,
+                "mean": 690.9340793800017,
+                "stddev": 24.590496054312776,
+                "rounds": 5,
+                "median": 698.2946688999946,
+                "iqr": 25.243494199981797,
+                "q1": 680.767713175017,
+                "q3": 706.0112073749988,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 649.0777530999912,
+                "hd15iqr": 711.9279977999977,
+                "ops": 0.0014473160752141994,
+                "total": 3454.670396900008,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_900000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_900000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4499995,
+                "two_qubit_gate_depth": 4499995,
+                "swap_count": 0,
+                "gates_removed": 2699997,
+                "placement_valid": true,
+                "n_qubits": 900000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 85.63290239998605,
+                "max": 98.47648529999424,
+                "mean": 89.75340751999757,
+                "stddev": 5.099258558513556,
+                "rounds": 5,
+                "median": 87.51775020000059,
+                "iqr": 5.090329050013679,
+                "q1": 86.8959713249933,
+                "q3": 91.98630037500698,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 85.63290239998605,
+                "hd15iqr": 98.47648529999424,
+                "ops": 0.01114163826902276,
+                "total": 448.7670375999878,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_1000000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_1000000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 7513506,
+                "two_qubit_gate_depth": 7002981,
+                "swap_count": 2513511,
+                "gates_removed": 2999997,
+                "placement_valid": false,
+                "n_qubits": 1000000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 861.0636514000071,
+                "max": 1061.6142086999898,
+                "mean": 952.0113925800018,
+                "stddev": 95.76441739823538,
+                "rounds": 5,
+                "median": 932.7838177999947,
+                "iqr": 184.42392822499824,
+                "q1": 862.3460002750071,
+                "q3": 1046.7699285000053,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 861.0636514000071,
+                "hd15iqr": 1061.6142086999898,
+                "ops": 0.001050407597843915,
+                "total": 4760.056962900009,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_heisenberg_scale[Heisenberg_1000000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_heisenberg_scale[Heisenberg_1000000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4999995,
+                "two_qubit_gate_depth": 4999995,
+                "swap_count": 0,
+                "gates_removed": 2999997,
+                "placement_valid": true,
+                "n_qubits": 1000000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 95.54610700000194,
+                "max": 119.0306225999957,
+                "mean": 100.68716468000203,
+                "stddev": 10.261928980623676,
+                "rounds": 5,
+                "median": 96.46921780001139,
+                "iqr": 6.301378100026341,
+                "q1": 95.81760564998694,
+                "q3": 102.11898375001329,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 95.54610700000194,
+                "hd15iqr": 119.0306225999957,
+                "ops": 0.009931752504682605,
+                "total": 503.4358234000101,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_100000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_100000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 739658,
+                "two_qubit_gate_depth": 666427,
+                "swap_count": 239663,
+                "gates_removed": 299997,
+                "placement_valid": false,
+                "n_qubits": 100000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 34.29538619998493,
+                "max": 36.427594199980376,
+                "mean": 35.47624381998903,
+                "stddev": 0.9262435667219101,
+                "rounds": 5,
+                "median": 35.924600999976974,
+                "iqr": 1.5433242750223144,
+                "q1": 34.593824549985584,
+                "q3": 36.1371488250079,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 34.29538619998493,
+                "hd15iqr": 36.427594199980376,
+                "ops": 0.028187877078366216,
+                "total": 177.38121909994516,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_100000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_100000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    100000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_100000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 499995,
+                "two_qubit_gate_depth": 499995,
+                "swap_count": 0,
+                "gates_removed": 299997,
+                "placement_valid": true,
+                "n_qubits": 100000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 9.432068900001468,
+                "max": 9.809001099987654,
+                "mean": 9.606545859994366,
+                "stddev": 0.17042197136532103,
+                "rounds": 5,
+                "median": 9.59890599999926,
+                "iqr": 0.3179269249740173,
+                "q1": 9.443452775005426,
+                "q3": 9.761379699979443,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 9.432068900001468,
+                "hd15iqr": 9.809001099987654,
+                "ops": 0.10409568793757742,
+                "total": 48.032729299971834,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_200000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_200000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 1530310,
+                "two_qubit_gate_depth": 1426591,
+                "swap_count": 530315,
+                "gates_removed": 599997,
+                "placement_valid": false,
+                "n_qubits": 200000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 87.12885489998735,
+                "max": 94.39929849997861,
+                "mean": 90.01604799999623,
+                "stddev": 3.002126728812723,
+                "rounds": 5,
+                "median": 88.43117970001185,
+                "iqr": 4.412771174989757,
+                "q1": 88.02997367500211,
+                "q3": 92.44274484999187,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 87.12885489998735,
+                "hd15iqr": 94.39929849997861,
+                "ops": 0.011109130229756832,
+                "total": 450.08023999998113,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_200000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_200000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    200000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_200000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 999995,
+                "two_qubit_gate_depth": 999995,
+                "swap_count": 0,
+                "gates_removed": 599997,
+                "placement_valid": true,
+                "n_qubits": 200000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 18.880290600005537,
+                "max": 23.16756040000473,
+                "mean": 20.719823239999823,
+                "stddev": 1.692740865042744,
+                "rounds": 5,
+                "median": 19.97160009999061,
+                "iqr": 2.378001624994795,
+                "q1": 19.659354975003225,
+                "q3": 22.03735659999802,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 18.880290600005537,
+                "hd15iqr": 23.16756040000473,
+                "ops": 0.04826295998845637,
+                "total": 103.59911619999912,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_300000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_300000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 2294266,
+                "two_qubit_gate_depth": 2131317,
+                "swap_count": 794271,
+                "gates_removed": 899997,
+                "placement_valid": false,
+                "n_qubits": 300000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 151.97064009998576,
+                "max": 169.6307439999946,
+                "mean": 157.45813211999484,
+                "stddev": 7.256107916130664,
+                "rounds": 5,
+                "median": 154.4673313999956,
+                "iqr": 8.730032700012089,
+                "q1": 152.54338607499085,
+                "q3": 161.27341877500294,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 151.97064009998576,
+                "hd15iqr": 169.6307439999946,
+                "ops": 0.006350894593604892,
+                "total": 787.2906605999742,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_300000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_300000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    300000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_300000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1499995,
+                "two_qubit_gate_depth": 1499995,
+                "swap_count": 0,
+                "gates_removed": 899997,
+                "placement_valid": true,
+                "n_qubits": 300000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 26.634208400006173,
+                "max": 30.471419600013178,
+                "mean": 27.689529740007128,
+                "stddev": 1.5723922867993854,
+                "rounds": 5,
+                "median": 27.10915180001757,
+                "iqr": 1.1801156250221538,
+                "q1": 26.885471524990862,
+                "q3": 28.065587150013016,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 26.634208400006173,
+                "hd15iqr": 30.471419600013178,
+                "ops": 0.0361147339586325,
+                "total": 138.44764870003564,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_400000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_400000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3032534,
+                "two_qubit_gate_depth": 2819396,
+                "swap_count": 1032539,
+                "gates_removed": 1199997,
+                "placement_valid": false,
+                "n_qubits": 400000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 238.15513430000283,
+                "max": 261.2779631000012,
+                "mean": 247.28277982000145,
+                "stddev": 8.612535309906491,
+                "rounds": 5,
+                "median": 244.41783670001314,
+                "iqr": 8.64859155000886,
+                "q1": 242.81595327499235,
+                "q3": 251.4645448250012,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 238.15513430000283,
+                "hd15iqr": 261.2779631000012,
+                "ops": 0.004043953245462161,
+                "total": 1236.4138991000073,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_400000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_400000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    400000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_400000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 1999995,
+                "two_qubit_gate_depth": 1999995,
+                "swap_count": 0,
+                "gates_removed": 1199997,
+                "placement_valid": true,
+                "n_qubits": 400000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 34.86504229999264,
+                "max": 46.39658909998252,
+                "mean": 37.80868674000376,
+                "stddev": 4.859875469612882,
+                "rounds": 5,
+                "median": 36.069541100005154,
+                "iqr": 4.14095229999657,
+                "q1": 34.97932572501304,
+                "q3": 39.12027802500961,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 34.86504229999264,
+                "hd15iqr": 46.39658909998252,
+                "ops": 0.02644894827679753,
+                "total": 189.0434337000188,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_500000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_500000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 3802616,
+                "two_qubit_gate_depth": 3533561,
+                "swap_count": 1302621,
+                "gates_removed": 1499997,
+                "placement_valid": false,
+                "n_qubits": 500000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 307.62147699997877,
+                "max": 343.0540139999939,
+                "mean": 323.385237519996,
+                "stddev": 12.749739972285552,
+                "rounds": 5,
+                "median": 321.1032012999931,
+                "iqr": 11.921559275011532,
+                "q1": 317.30396747499617,
+                "q3": 329.2255267500077,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 307.62147699997877,
+                "hd15iqr": 343.0540139999939,
+                "ops": 0.0030922871052150814,
+                "total": 1616.92618759998,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_500000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_500000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    500000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_500000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2499995,
+                "two_qubit_gate_depth": 2499995,
+                "swap_count": 0,
+                "gates_removed": 1499997,
+                "placement_valid": true,
+                "n_qubits": 500000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 45.07901980000315,
+                "max": 54.77301710000029,
+                "mean": 47.64911915999837,
+                "stddev": 4.012573110284653,
+                "rounds": 5,
+                "median": 46.119910599983996,
+                "iqr": 2.8133378499842365,
+                "q1": 45.67745380000997,
+                "q3": 48.49079164999421,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 45.07901980000315,
+                "hd15iqr": 54.77301710000029,
+                "ops": 0.020986746819855257,
+                "total": 238.24559579999186,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_600000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_600000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 4555794,
+                "two_qubit_gate_depth": 4248076,
+                "swap_count": 1555799,
+                "gates_removed": 1799997,
+                "placement_valid": false,
+                "n_qubits": 600000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 425.5271872000012,
+                "max": 464.09124929999234,
+                "mean": 442.0012966199953,
+                "stddev": 16.04962059466223,
+                "rounds": 5,
+                "median": 438.7880493999983,
+                "iqr": 26.67073302497738,
+                "q1": 428.4669370000047,
+                "q3": 455.13767002498207,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 425.5271872000012,
+                "hd15iqr": 464.09124929999234,
+                "ops": 0.0022624368019891505,
+                "total": 2210.0064830999763,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_600000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_600000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    600000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_600000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 2999995,
+                "two_qubit_gate_depth": 2999995,
+                "swap_count": 0,
+                "gates_removed": 1799997,
+                "placement_valid": true,
+                "n_qubits": 600000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 57.28841849998571,
+                "max": 59.467872700013686,
+                "mean": 58.38726460000034,
+                "stddev": 0.8018955205593932,
+                "rounds": 5,
+                "median": 58.30855689998134,
+                "iqr": 1.0023942249899847,
+                "q1": 57.9201423750128,
+                "q3": 58.922536600002786,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 57.28841849998571,
+                "hd15iqr": 59.467872700013686,
+                "ops": 0.01712702259389617,
+                "total": 291.9363230000017,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_700000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_700000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5167358,
+                "two_qubit_gate_depth": 4869495,
+                "swap_count": 1667363,
+                "gates_removed": 2099997,
+                "placement_valid": false,
+                "n_qubits": 700000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 492.9131619000109,
+                "max": 499.6735087999841,
+                "mean": 496.9306237599987,
+                "stddev": 2.749325733478077,
+                "rounds": 5,
+                "median": 496.82025230000727,
+                "iqr": 4.20018492500094,
+                "q1": 495.1905647999956,
+                "q3": 499.39074972499657,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 492.9131619000109,
+                "hd15iqr": 499.6735087999841,
+                "ops": 0.002012353339050739,
+                "total": 2484.6531187999935,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_700000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_700000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    700000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_700000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3499995,
+                "two_qubit_gate_depth": 3499995,
+                "swap_count": 0,
+                "gates_removed": 2099997,
+                "placement_valid": true,
+                "n_qubits": 700000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 71.36455450000358,
+                "max": 103.0724351000099,
+                "mean": 78.51891274000518,
+                "stddev": 13.810578455399586,
+                "rounds": 5,
+                "median": 71.66086659999564,
+                "iqr": 10.584474475021125,
+                "q1": 71.44865177499742,
+                "q3": 82.03312625001854,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 71.36455450000358,
+                "hd15iqr": 103.0724351000099,
+                "ops": 0.0127357851134699,
+                "total": 392.5945637000259,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_800000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_800000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 5987026,
+                "two_qubit_gate_depth": 5566699,
+                "swap_count": 1987031,
+                "gates_removed": 2399997,
+                "placement_valid": false,
+                "n_qubits": 800000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 627.5637339999957,
+                "max": 735.534015000012,
+                "mean": 690.8347068399947,
+                "stddev": 43.56290289409189,
+                "rounds": 5,
+                "median": 697.1447111999732,
+                "iqr": 67.72346164999908,
+                "q1": 659.2496405499987,
+                "q3": 726.9731021999978,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 627.5637339999957,
+                "hd15iqr": 735.534015000012,
+                "ops": 0.0014475242631832792,
+                "total": 3454.173534199974,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_800000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_800000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    800000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_800000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 3999995,
+                "two_qubit_gate_depth": 3999995,
+                "swap_count": 0,
+                "gates_removed": 2399997,
+                "placement_valid": true,
+                "n_qubits": 800000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 79.50425770002767,
+                "max": 82.49660899999435,
+                "mean": 81.15395786000299,
+                "stddev": 1.294781262716196,
+                "rounds": 5,
+                "median": 81.62290430002031,
+                "iqr": 2.2286855499842204,
+                "q1": 79.94052242500038,
+                "q3": 82.1692079749846,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 79.50425770002767,
+                "hd15iqr": 82.49660899999435,
+                "ops": 0.012322257920249302,
+                "total": 405.76978930001496,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_900000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_900000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 6554628,
+                "two_qubit_gate_depth": 6199196,
+                "swap_count": 2054633,
+                "gates_removed": 2699997,
+                "placement_valid": false,
+                "n_qubits": 900000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 665.4693898000114,
+                "max": 725.2584005000244,
+                "mean": 693.9137958200066,
+                "stddev": 27.605559430198767,
+                "rounds": 5,
+                "median": 680.278865100001,
+                "iqr": 48.70842745000846,
+                "q1": 673.9476314499989,
+                "q3": 722.6560589000073,
+                "iqr_outliers": 0,
+                "stddev_outliers": 3,
+                "outliers": "3;0",
+                "ld15iqr": 665.4693898000114,
+                "hd15iqr": 725.2584005000244,
+                "ops": 0.0014411011944477736,
+                "total": 3469.568979100033,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_900000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_900000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    900000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_900000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4499995,
+                "two_qubit_gate_depth": 4499995,
+                "swap_count": 0,
+                "gates_removed": 2699997,
+                "placement_valid": true,
+                "n_qubits": 900000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 84.05316630000016,
+                "max": 98.66206090000924,
+                "mean": 89.57760712000308,
+                "stddev": 6.0384654996899245,
+                "rounds": 5,
+                "median": 88.01753189999727,
+                "iqr": 9.301850274998287,
+                "q1": 84.62170695000532,
+                "q3": 93.9235572250036,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 84.05316630000016,
+                "hd15iqr": 98.66206090000924,
+                "ops": 0.011163504274682679,
+                "total": 447.8880356000154,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_1000000q_heavy_hex]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_1000000q_heavy_hex]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "heavy_hex",
+                    "UNSERIALIZABLE[<function _coupling_map_heavy_hex at 0x0000018BE24FB240>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_heavy_hex",
+            "extra_info": {
+                "two_qubit_gate_count": 7513506,
+                "two_qubit_gate_depth": 7002981,
+                "swap_count": 2513511,
+                "gates_removed": 2999997,
+                "placement_valid": false,
+                "n_qubits": 1000000,
+                "topology": "heavy_hex"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 824.4547976000176,
+                "max": 882.2279067999916,
+                "mean": 853.5845509400067,
+                "stddev": 25.439560926251215,
+                "rounds": 5,
+                "median": 848.7932027000061,
+                "iqr": 45.957851749975816,
+                "q1": 832.5239800250201,
+                "q3": 878.481831774996,
+                "iqr_outliers": 0,
+                "stddev_outliers": 2,
+                "outliers": "2;0",
+                "ld15iqr": 824.4547976000176,
+                "hd15iqr": 882.2279067999916,
+                "ops": 0.0011715301066528838,
+                "total": 4267.922754700034,
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_su2_scale[Heisenberg_1000000q_linear]",
+            "fullname": "benchpress/cif_gym/transpile/transpile_qasm_circuit_test.py::TestCIQSScale::test_su2_scale[Heisenberg_1000000q_linear]",
+            "params": {
+                "_scale": [
+                    "Heisenberg",
+                    1000000,
+                    "linear",
+                    "UNSERIALIZABLE[<function _coupling_map_linear at 0x0000018BE24FB380>]"
+                ]
+            },
+            "param": "Heisenberg_1000000q_linear",
+            "extra_info": {
+                "two_qubit_gate_count": 4999995,
+                "two_qubit_gate_depth": 4999995,
+                "swap_count": 0,
+                "gates_removed": 2999997,
+                "placement_valid": true,
+                "n_qubits": 1000000,
+                "topology": "linear"
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 92.91297280002618,
+                "max": 115.39067580000847,
+                "mean": 97.96619055999909,
+                "stddev": 9.778717764266995,
+                "rounds": 5,
+                "median": 93.42304349999176,
+                "iqr": 7.143852724999306,
+                "q1": 93.00512747499306,
+                "q3": 100.14898019999237,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 92.91297280002618,
+                "hd15iqr": 115.39067580000847,
+                "ops": 0.010207603197427109,
+                "total": 489.83095279999543,
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2026-03-16T19:18:04.518569+00:00",
+    "version": "5.2.3"
+}
