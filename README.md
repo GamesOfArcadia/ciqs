@@ -1,7 +1,16 @@
 # CIQS — Causal Iteration Quantum Solution
 
 CIQS is an analytic quantum circuit pipeline: placement, routing, and optimization.  
-It handles circuits beyond 1,000,000 qubits on standard hardware, scales linearly in gate count, and removes gates by analytic certificate.
+
+The pipeline natively handles quDits of any dimension ( qubit, qutrit, ququart, and above ) with no additional parameters required. 
+The optimizer scans the mapped and routed circuit once and applies three removal passes in sequence:
+
+Pass1 removes individual redundant gates,
+Pass2 removes gate sequences impossible to remove individually,
+Pass3 removes gates the target device cannot execute faithfully, at zero fidelity cost, based on vendor-supplied hardware calibration data.
+
+CIQS handles the full pipeline from raw circuit, to hardware connection.
+
 No heuristics, no pattern matching, no approximation, no simulation, no statevector
 Zero fidelity loss by construction.
 
