@@ -5,9 +5,9 @@ CIQS is an analytic quantum circuit pipeline: placement, routing, and optimizati
 The pipeline natively handles quDits of any dimension ( qubit, qutrit, ququart, and above ) with no additional parameters required.
 The optimizer scans the mapped and routed circuit once and applies three removal passes in sequence:
 
-Pass1 removes individual redundant gates,
-Pass2 removes gate sequences impossible to remove individually,
-Pass3 removes gates the target device cannot execute faithfully, at zero fidelity cost, based on vendor-supplied hardware calibration data.
+- Pass1 removes individual redundant gates,
+- Pass2 removes gate sequences impossible to remove individually,
+- Pass3 removes gates the target device cannot execute faithfully, at zero fidelity cost, based on vendor-supplied hardware calibration data.
 
 CIQS handles the full pipeline from raw circuit, to hardware connection.
 
