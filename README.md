@@ -1,14 +1,9 @@
 # CIQS — Causal Iteration Quantum Solution
 
-*Optimizing 1,000,000 qubits shouldn't require a $1B facility.  
-It runs on a laptop.*
-
 CIQS is an analytic quantum circuit pipeline: placement, routing, and optimization.  
 It handles circuits beyond 1,000,000 qubits on standard hardware, scales linearly in gate count, and removes gates by analytic certificate.
 No heuristics, no pattern matching, no approximation, no simulation, no statevector
 Zero fidelity loss by construction.
-
-*Fridge still required if you insist on matter qubits though.*
 
 CIQA (1:5 quantum error correction) is not included in this distribution. Contact for licensing.
 ---
