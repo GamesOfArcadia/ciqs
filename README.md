@@ -1,6 +1,6 @@
 # CIQS — Causal Iteration Quantum Solution
 
-CIQS is an analytic quantum circuit pipeline: placement, routing, and optimization.  
+CIQS is an analytic quantum circuit pipeline including: mapper, router, and optimizer.
 
 The pipeline natively handles quDits of any dimension ( qubit, qutrit, ququart, and above ) with no additional parameters required.
 The optimizer scans the mapped and routed circuit once and applies three removal passes in sequence:
