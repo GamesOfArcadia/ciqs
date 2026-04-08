@@ -3,7 +3,13 @@
 CIQS is an analytic quantum circuit pipeline including: mapper, router, and optimizer.
 
 The pipeline natively handles quDits of any dimension ( qubit, qutrit, ququart, and above ) with no additional parameters required.
-The optimizer scans the mapped and routed circuit once and applies three removal passes in sequence:
+
+CIQM, the analytic mapper and router, places logical qubits onto physical positions using vectorized sector assignment in a single pass,
+identifying the optimal subgraph of the hardware topology for the circuit's interaction structure. 
+The router handles residual SWAP insertions via BFS shortest path, updating placement maps sequentially. 
+On circuits whose interaction graph matches the hardware topology, the mapper achieves valid placement with zero SWAP insertions. No routing overhead, no added depth.
+
+CIQO, the analytic optimizer, scans the mapped and routed circuit once and applies three removal passes in sequence:
 
 - Pass1 removes individual redundant gates,
 - Pass2 removes gate sequences impossible to remove individually,
@@ -14,8 +20,9 @@ CIQS handles the full pipeline from raw circuit, to hardware connection.
 No heuristics, no pattern matching, no approximation, no simulation, no statevector.
 Zero fidelity loss by construction.
 
-CIQA (1:5 quantum error correction) is not included in this distribution. Contact for licensing.
----
+
+**CIQA (1:5 quantum error correction) is not included in this distribution. Contact for licensing.**
+
 ---
 
 ## IBM Benchpress Results
