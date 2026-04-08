@@ -20,7 +20,7 @@ CIQA (1:5 quantum error correction) is not included in this distribution. Contac
 
 ## IBM Benchpress Results
 
-All numbers below are from IBM Benchpress, run on an AMD Ryzen 5 3400G, Windows 11. No GPU.
+All numbers below are from IBM Benchpress, made on an AMD Ryzen 5, 32Go RAM, no GPU.
 
 Circuit family: Heisenberg model. Topologies: linear chain and IBM heavy-hex.
 
