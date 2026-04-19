@@ -1,4 +1,4 @@
-# CIQS — Causal Iteration Quantum Solution
+# CIQS: Causal Iteration Quantum Solution - The 'million-qubit' compiler
 
 CIQS is an analytic quantum circuit pipeline including: mapper, router, and optimizer.
 
