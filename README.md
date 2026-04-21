@@ -22,7 +22,7 @@ No heuristics, no pattern matching, no approximation, no simulation, no statevec
 Zero fidelity loss by construction.
 
 
-**CIQA (1:5 quantum error correction) is not included in this distribution. Contact for licensing.**
+**CIQA (1:5 quantum error correction) is not included in this distribution but is free-to-use at arcadialab.fr/tools/CIQA (no account required, no ads)**
 
 ---
 
