@@ -49,6 +49,7 @@ Linear scaling confirmed from 100,000 to 1,000,000 qubits.
 ## Published Results
 
 - CIQS pipeline paper: [10.5281/zenodo.18750722](https://zenodo.org/records/19056796)
+- CIQS vs Qiskit: [10.5281/zenodo.19896661](https://zenodo.org/records/19896662)
 - Benchpress raw data included in this repository
 
 ---
