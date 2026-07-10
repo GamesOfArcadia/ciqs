@@ -1,13 +1,13 @@
 # CIQS: Causal Iteration Quantum Solution
 # The 'million-qubit compiler' and The '1:5 QEC'
 
-by arcadialab.fr
+by [arcadialab.fr](https://arcadialab.fr)
 
 ---
 
 ## Description
 
-**CIQA** is an analytically derived quantum error correction encoder. Each logical qubit is encoded into 5 physical data qubits using a strict [[5,1,3]] perfect quantum code, with 2 ancilla qudits per logical block for syndrome extraction. Encoding angles, syndrome thresholds, and correction operators are produced by closed-form derivation, with no free parameters. 
+**CIQA** is an analytic quantum error correction encoder. Each logical qubit is encoded into 5 physical data qubits using a strict [[5,1,3]] perfect quantum code, with 2 ancilla qudits per logical block for syndrome extraction. Encoding angles, syndrome thresholds, and correction operators are produced by closed-form derivation, with no free parameters. 
 
 **CIQS** (CIQM mapper/router + CIQO optimizer) is a fully analytic compilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
