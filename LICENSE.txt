@@ -1,4 +1,4 @@
-CIQS Research License v1.0
+CIQS Research License v1.1
 ===========================
 
 Copyright (c) 2026. All rights reserved.
@@ -21,8 +21,12 @@ PROHIBITED
 ATTRIBUTION
 Any publication or public presentation of results obtained using this
 software must include the following citation:
-Jessy Pensédent (2026). CIQS: A Scalable Pipeline for Processing Quantum Circuits Beyond 1,000,000 Qubits.
-https://doi.org/10.5281/zenodo.19056796
+
+```
+Jessy Pensédent (2026). CIQS: A Scalable Pipeline for Processing Quantum Circuits Beyond 1,000,000 Qubits. DOI: 10.5281/zenodo.19056796
+Jessy Pensédent (2026). CIQA: Analytical 1:5 Quantum Error Correction | 200× Below Surface-Code Overhead. DOI: 10.5281/zenodo.19148021
+arcadialab.fr
+```
 
 NO WARRANTY
 This software is provided "as is" without warranty of any kind.
@@ -31,4 +35,4 @@ The author is not liable for any damages arising from its use.
 TERMINATION
 This license terminates automatically upon any breach of its terms.
 
-For commercial licensing inquiries: goa.contactpro@gmail.com
+For commercial licensing inquiries: jessy.pensedent@gmail.com
