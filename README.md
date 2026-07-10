@@ -1,5 +1,7 @@
 # CIQS: Causal Iteration Quantum Solution
-# The 'million-qubit compiler' and The '1:5 QEC' by arcadialab.fr
+# The 'million-qubit compiler' and The '1:5 QEC'
+
+by arcadialab.fr
 
 ---
 
