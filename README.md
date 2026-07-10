@@ -1,76 +1,70 @@
 # CIQS: Causal Iteration Quantum Solution
-# The 'million-qubit' compiler, by arcadialab.fr
-
-CIQS is an analytic quantum circuit pipeline including: mapper, router, and optimizer.
-
-The pipeline natively handles quDits of any dimension ( qubit, qutrit, ququart, and above ) with no additional parameters required.
-
-CIQM, the analytic mapper and router, places logical qubits onto physical positions using vectorized sector assignment in a single pass,
-identifying the optimal subgraph of the hardware topology for the circuit's interaction structure. 
-The router handles residual SWAP insertions via BFS shortest path, updating placement maps sequentially. 
-On circuits whose interaction graph matches the hardware topology, the mapper achieves valid placement with zero SWAP insertions. No routing overhead, no added depth.
-
-CIQO, the analytic optimizer, scans the mapped and routed circuit once and applies three removal passes in sequence:
-
-- Pass1 removes individual redundant gates,
-- Pass2 removes gate sequences impossible to remove individually,
-- Pass3 removes gates the target device cannot execute faithfully, at zero fidelity cost, based on vendor-supplied hardware calibration data.
-
-CIQS handles the full pipeline from raw circuit, to hardware connection.
-
-No heuristics, no pattern matching, no approximation, no simulation, no statevector.
-Zero fidelity loss by construction.
-
-
-**CIQA (1:5 quantum error correction) is not included in this distribution but is free-to-use: [arcadialab.fr](https://arcadialab.fr/tools/CIQA) (no account required, no ads)**
+# The 'million-qubit compiler' and The '1:5 QEC' by arcadialab.fr
 
 ---
 
-## IBM Benchpress Results
+## Description
 
-All numbers below are from IBM Benchpress, made on an AMD Ryzen 5, 32Go RAM, no GPU.
+**CIQA** is an analytically derived quantum error correction encoder. Each logical qubit is encoded into 5 physical data qubits using a strict [[5,1,3]] perfect quantum code, with 2 ancilla qudits per logical block for syndrome extraction. Encoding angles, syndrome thresholds, and correction operators are produced by closed-form derivation, with no free parameters. 
 
-Circuit family: Heisenberg model. Topologies: linear chain and IBM heavy-hex.
+**CIQS** (CIQM mapper/router + CIQO optimizer) is a fully analytic compilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
-| Qubits    | Topology  | Time (s) | Gates Removed | SWAPs     |
-|-----------|-----------|----------|---------------|-----------|
-| 100,000   | linear    | ~9       | 299,997       | 0         |
-| 100,000   | heavy-hex | ~31      | 299,997       | 239,663   |
-| 500,000   | linear    | ~47      | 1,499,997     | 0         |
-| 500,000   | heavy-hex | ~303     | 1,499,997     | 1,302,621 | 
-| 1,000,000 | linear    | ~96      | 2,999,997     | 0         |
-| 1,000,000 | heavy-hex | ~809     | 2,999,997     | 2,513,511 |
+CIQA encodes first. CIQS receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output.
 
-**Gate removal: ~30% consistently across all scales.**  
-Linear scaling confirmed from 100,000 to 1,000,000 qubits.
+Both tools are compiled binaries, free for non-commercial use. Contact for licensing options.
 
 ---
 
-## Published Results
+## Files
 
-- CIQS pipeline paper: [10.5281/zenodo.18750722](https://zenodo.org/records/19056796)
-- CIQS vs Qiskit: [10.5281/zenodo.19896661](https://zenodo.org/records/19896662)
-- Benchpress raw data included in this repository
+In order of execution:
+
+| File | Role |
+|---|---|
+| `CIQA.pyd` | QEC encoder: 1 logical qubit to 5 physical + 2 ancilla |
+| `CIQS_pipeline.cp312-win_amd64.pyd` | Pipeline entry point: runs CIQM and CIQO in sequence |
+| `CIQM.cp312-win_amd64.pyd` | Mapper and router: qubit placement and SWAP insertion |
+| `CIQO_v2.cp312-win_amd64.pyd` | Optimizer: gate removal on operational gates only |
+|---|---|
+| `CIQS_adapters.cp312-win_amd64.pyd` | Format adapters: Qiskit, OpenQASM 3, generic gate list |
+| `ciqa_adapters.py` | Standalone adapter functions for external pipeline integration |
 
 ---
 
 ## Requirements
 
-```
-pip install numpy scipy
-```
+- Python 3.9+
+- Qiskit >= 1.0 (for IBM hardware runs and the Qiskit adapter)
+- `qiskit-ibm-runtime` (for live QPU submission)
+- pip install numpy scipy
 
-Python 3.10, 3.11, or 3.12. Linux x86_64 or Windows x64.
+Place all `.pyd` modules in your working directory or add them to your Python path.
 
 ---
 
 ## Usage
 
-Everything goes through `CIQS_pipeline`. No need to call CIQM or CIQO directly.
+### With CIQA (standard path)
+
+```python
+from CIQA import CIQA
+from CIQS_pipeline import CIQS_pipeline, CIFPipelineResult
+
+ciqa = CIQA(n=5, d=2)
+encoded = ciqa.encode(logical_circuit)
+
+result = CIQS_pipeline(encoded, CouplingMap.heavy_hex(127))
+```
+
+### Without CIQA
+
+Everything goes through CIQS_pipeline. No need to call CIQM or CIQO directly.
+
+CIQS_pipeline accepts circuits directly without QEC encoding.
+*coupling_map is required for all input types except Perceval*.
 
 ```python
 from CIQS_pipeline import CIQS_pipeline, CIFPipelineResult
-
 
 # Qiskit
 result = CIQS_pipeline(qiskit_circuit, CouplingMap.line(1000))
@@ -83,52 +77,156 @@ result = CIQS_pipeline(qasm_str, CouplingMap.heavy_hex(127))
 # Perceval (coupling map auto-derived from processor topology)
 result = CIQS_pipeline(perceval_processor)
 
-# Blackbird Strawberry Fields (input only — to_blackbird not exposed. My bad)
+# Blackbird / Strawberry Fields
 result = CIQS_pipeline(blackbird_program, CouplingMap.line(100))
-
-
-# Results
-print(result.swap_count)        # SWAPs inserted by router
-print(result.gates_removed)     # gates removed by optimizer
-print(result.placement.valid)   # True = all qubit pairs placed natively
-
-
-# Export
-qc = result.to_qiskit()
-qasm = result.to_openqasm()
-processor = result.to_perceval()
 ```
 
-`coupling_map` is required for all input types except Perceval.
-
 ---
 
-## Supported Input Formats
-
-- Qiskit `QuantumCircuit`
-- OpenQASM 2.0 string
-- Perceval `Processor` (coupling map auto-derived)
-- Blackbird Strawberry Fields
-
----
-
-## Topologies
+### Topologies
 
 ```python
+from CIQM import CouplingMap
+
 CouplingMap.line(n)
 CouplingMap.heavy_hex(n)
 CouplingMap.grid(rows, cols)
 CouplingMap.from_edges(edge_list)
 ```
 
-`coupling_map` is required for all input types except Perceval.
+### Results
+
+```python
+print(result.swap_count)        # SWAPs inserted by router
+print(result.gates_removed)     # gates removed by optimizer
+print(result.placement.valid)   # True = all qubit pairs placed natively
+
+# Export
+qc       = result.to_qiskit()
+qasm     = result.to_openqasm()
+processor = result.to_perceval()
+```
+
+For a complete end-to-end example including QPU submission, see [`page_curve_ibm_experiment_v5.py`](page_curve_ibm_experiment_v5.py).
+
+### External pipeline integration
+
+`ciqa.encode()` returns a dict with four keys:
+
+| Key | Type | Description |
+|---|---|---|
+| `gates` | `list[dict]` | Ordered list of physical gate operations |
+| `n_logical` | `int` | Number of logical qubits in the input circuit |
+| `n_physical` | `int` | Total physical qubits after encoding (`n_logical x 5` + ancillae) |
+| `report` | `EncodingReport` | Encoding parameters for auditing |
+
+Three gate types are produced: `Ry` (single-qubit rotation), `CX` (controlled-X), and `M` (measurement). Measurement gates carry `_ciqa_physical: True` to identify CIQA-inserted ancilla operations. Any pipeline supporting single-qubit rotations and two-qubit controlled gates can accept CIQA output directly.
+
+Adapters for Qiskit, OpenQASM 3, and a generic gate list format are in [`ciqa_adapters.py`](ciqa_adapters.py).
+
+**Coupling map sizing at n=5:**
+
+| Logical qubits | Data qubits (x5) | Ancillae (x2) | Minimum total |
+|---|---|---|---|
+| 1 | 5 | 2 | 7 |
+| 10 | 50 | 20 | 70 |
+| 100 | 500 | 200 | 700 |
+| 1,000 | 5,000 | 2,000 | 7,000 |
+
+The downstream router may require additional qubits for SWAP insertion depending on hardware topology.
+
+**Hard constraint:** CIQA encoding angles are exact fixed values. Gate fusion or small-angle removal applied to the encoding prefix breaks the error correction guarantee. Pass the encoded circuit to the router without a pre-routing simplification pass. Apply gate optimization only after routing and only to gates outside the encoding prefix. *When using CIQS, this is handled automatically*.
+
+---
+
+## Performance
+
+### CIQS — IBM Benchpress
+
+The full IBM Benchpress suite (892 tests, circuits up to 930 qubits) was run with CIQS on a Ryzen 5 / 32GB machine, against Qiskit's published results on a Ryzen 9 / 128GB machine.
+
+| SDK | Passed / Attempted | Failed | Wall time |
+|---|---|---|---|
+| **CIQS** | **892 / 892** | **0** | **1h 15m** |
+| Qiskit | 892 / 892 | 0 | 17h 15m |
+| QTS | 877 / 892 | 15 | >= 35h 18m |
+| Tket | 814 / 892 | 78 | >= 33h 11m |
+| BQSKit | 716 / 892 | 176 | >= 64h 08m |
+
+Per-test geometric mean: CIQS at 0.051s, Qiskit at 0.310s. In the 200-433 qubit range, CIQS is 14.7x faster than Qiskit.
+
+**Scaling** (Heisenberg model, same hardware):
+
+| Qubits | Topology | 2Q Gates | SWAPs | Gates removed | Runtime |
+|---|---|---|---|---|---|
+| 100,000 | linear | 499,995 | 0 | 299,997 | 9.6s |
+| 100,000 | heavy-hex | 739,658 | 239,663 | 299,997 | 32.5s |
+| 1,000,000 | linear | 4,999,995 | 0 | 2,999,997 | 93.4s |
+| 1,000,000 | heavy-hex | 7,513,506 | 2,513,511 | 2,999,997 | 848.8s |
+
+On the linear topology, runtime scales proportionally with qubit count across three orders of magnitude.
+
+### CIQA - hardware validation
+
+IBM ibm_fez (Heron r2, 156 qubits), April 3, 2026.
+Three independent runs, 8,192 shots each, pinned layout, live calibration data.
+
+| Circuit | Mean fidelity | SD |
+|---|---|---|
+| Bare qubit, no error | 0.994 | 0.002 |
+| Bare qubit, X error, no correction | 0.015 | 0.002 |
+| CIQA encoded, no error | 0.818 | 0.011 |
+| CIQA, X error, corrected (q0 and q2) | 0.847 | 0.008 |
+| Mean improvement over unprotected | **+0.832** | 0.008 |
+
+
+### Hayden-Preskill - combined pipeline validation
+
+The Hayden-Preskill circuit models black hole evaporation as a quantum system across multiple entangled registers over several steps. No experiment ever successfully ran this circuit, until now.
+Paired with CIQA, CIQS compiled and routed the circuit onto IBM Heron r2, a heavy-hex topology that never was a design target for it.
+The routing required 987 SWAP insertions and 120 gate removals across 300 circuits per run. The experiment ran across three IBM backends at two system sizes, with up to 307,200 shots per job.
+The mutual information I₂(D:R) remained within ±0.004 of zero across all runs and all time steps, indicating no measurable noise introduced by the compilation.
+CIQA prevents the decoherence to happen early on, allowing the very first observation of the black hole evaporation past the Page time.
+The results have been reproduced a dozen times.
+
+---
+
+## Concatenation
+
+Each physical qudit of a CIQA block can itself be encoded in another CIQA block, reducing the logical error rate at the cost of additional overhead.
+
+| Level | Overhead | p_L at p = 0.1% |
+|---|---|---|
+| 1 | 1:5 | ~10^-5 |
+| 2 | 1:25 | ~10^-9 |
+| 3 | 1:125 | ~10^-17 |
+
+Level 3 is sufficient to run Shor's algorithm. The surface code requires approximately 1:1,000 overhead to reach equivalent logical error rates at the same physical error rate.
+
+---
+
+## Published work
+
+- **CIQS, architecture and benchmarks:** [10.5281/zenodo.19056796](https://zenodo.org/records/19056796)
+- **CIQS vs Qiskit, full Benchpress comparison:** [10.5281/zenodo.19896662](https://zenodo.org/records/19896662)
+- **CIQA, architecture and benchmarks:** [10.5281/zenodo.19405503](https://zenodo.org/records/19405503)
+- **Hayden-Preskill black hole circuit, full dataset:** [10.5281/zenodo.20120426](https://zenodo.org/records/20120426)
+
+**All benchmarks data, runners, QPU side data, are attached alongside their respective paper**
+
+---
+
+## Contact
+If something is missing, not clear, or not working as described, please let us know.
+
+For every enquiries including licensing options:
+
+jessy.pensedent@gmail.com
 
 ---
 
 ## License
 
-*Free for academic and non-commercial research use with attribution.    
-Commercial use requires a separate agreement.  
-See LICENSE.txt for terms*
+Free for non-commercial use. See `LICENSE` for terms.
 
----
+(c) Jessy Pensédent -- arcadialab.fr 
