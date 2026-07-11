@@ -109,7 +109,7 @@ qasm     = result.to_openqasm()
 processor = result.to_perceval()
 ```
 
-For a complete end-to-end example including QPU submission, see [`page_curve_ibm_experiment_v5.py`](page_curve_ibm_experiment_v5.py).
+For a complete end-to-end example including QPU submission, see `page_curve_ibm_experiment_v5.py`.
 
 ### External pipeline integration
 
@@ -124,7 +124,7 @@ For a complete end-to-end example including QPU submission, see [`page_curve_ibm
 
 Three gate types are produced: `Ry` (single-qubit rotation), `CX` (controlled-X), and `M` (measurement). Measurement gates carry `_ciqa_physical: True` to identify CIQA-inserted ancilla operations. Any pipeline supporting single-qubit rotations and two-qubit controlled gates can accept CIQA output directly.
 
-Adapters for Qiskit, OpenQASM 3, and a generic gate list format are in [`ciqa_adapters.py`](ciqa_adapters.py).
+Adapters for Qiskit, OpenQASM 3, and a generic gate list format are in `ciqa_adapters.py`.
 
 **Coupling map sizing at n=5:**
 
