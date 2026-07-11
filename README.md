@@ -29,7 +29,7 @@ In order of execution:
 | `CIQO_v2.cp312-win_amd64.pyd` | Optimizer: gate removal on operational gates only |
 |---|---|
 | `CIQS_adapters.cp312-win_amd64.pyd` | Format adapters: Qiskit, OpenQASM 3, generic gate list |
-| `ciqa_adapters.py` | Standalone adapter functions for external pipeline integration |
+| `CIQA_integration_guide.pdf` | Standalone adapter functions for external pipeline integration |
 
 ---
 
@@ -124,7 +124,7 @@ For a complete end-to-end example including QPU submission, see `page_curve_ibm_
 
 Three gate types are produced: `Ry` (single-qubit rotation), `CX` (controlled-X), and `M` (measurement). Measurement gates carry `_ciqa_physical: True` to identify CIQA-inserted ancilla operations. Any pipeline supporting single-qubit rotations and two-qubit controlled gates can accept CIQA output directly.
 
-Adapters for Qiskit, OpenQASM 3, and a generic gate list format are in `ciqa_adapters.py`.
+Adapters for Qiskit, OpenQASM 3, and a generic gate list format are in `CIQA_integration_guide.pdf`.
 
 **Coupling map sizing at n=5:**
 
