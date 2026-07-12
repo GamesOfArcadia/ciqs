@@ -5,11 +5,15 @@ by [arcadialab.fr](https://arcadialab.fr)
 
 ---
 
+`CIQS is composed of: CIQA (error correction), CIQM (mapper/router) and CIQO (optimizer)`
+
+`CIQA is optional in the pipeline, not all architectures need error correction.` [See comparison matter qubits Vs photon qubits](https://zenodo.org/records/19143454)
+
 ## Description
 
-**CIQA** is an analytic quantum error correction code. Each logical qubit is encoded into 5 physical data qubits using a strict [[5,1,3]] perfect quantum code, with 2 ancilla qudits per logical block for syndrome extraction. CIQA is not a stabilizer code. Its protection is not built from redundancy defeating random errors by majority, it comes from two analytically derived geometric constants which define closed-form error floors for two independent parity channels. An error either crosses a channel's geometric floor or it doesn't. There is no notion of weight, no minimum-distance decoding, and no threshold that scales with block size in the stabilizer sense.
+**CIQA** is an analytic quantum error correction code. Each logical qubit is encoded into 5 physical data qubits based on the [[5,1,3]] perfect quantum code (the distance parameter doesn't apply to CIQA), with 2 ancilla quDits per logical block for syndrome extraction. CIQA is not a stabilizer code. Its protection is not built from redundancy defeating random errors by majority, it comes from two analytically derived geometric constants which define closed-form error floors for two independent parity channels. An error either crosses a channel's geometric floor or it doesn't. There is no notion of weight, no minimum-distance decoding, and no threshold that scales with block size in the stabilizer sense.
 
-**CIQS** (CIQM mapper/router + CIQO optimizer) is a fully analytic compilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
+**CIQM + CIQO** form a fully analytic transpilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
 CIQA encodes first. CIQS receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output.
 
