@@ -219,7 +219,7 @@ Level 3 is sufficient to run Shor's algorithm. The surface code requires approxi
 - **CIQS, architecture and benchmarks:** [10.5281/zenodo.19056796](https://zenodo.org/records/19056796)
 - **CIQS vs Qiskit, full Benchpress comparison:** [10.5281/zenodo.19896662](https://zenodo.org/records/19896662)
 - **CIQA, architecture and benchmarks:** [10.5281/zenodo.19405503](https://zenodo.org/records/19405503)
-- **Hayden-Preskill black hole circuit, full dataset:** [10.5281/zenodo.20120426](https://zenodo.org/records/20120426)
+- **Hayden-Preskill black hole circuit, full dataset:** [10.5281/zenodo.20120426](https://zenodo.org/records/21326186)
 
 **All benchmarks data, runners, QPU side data, are attached alongside their respective paper**
 
