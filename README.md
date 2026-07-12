@@ -5,9 +5,11 @@ by [arcadialab.fr](https://arcadialab.fr)
 
 ---
 
-`CIQS is composed of: CIQA (error correction), CIQM (mapper/router) and CIQO (optimizer)`
+**CIQS** is composed of: **CIQA** (error correction), **CIQM** (mapper & router), and **CIQO** (optimizer)
 
-`CIQA is optional in the pipeline, not all architectures need error correction.` [See comparison matter qubits Vs photon qubits](https://zenodo.org/records/19143454)
+CIQA is optional in the pipeline, not all architectures need error correction ([See matter qubits Vs photon qubits](https://zenodo.org/records/19143454)).
+
+---
 
 ## Description
 
@@ -50,7 +52,7 @@ Place all `.pyd` modules in your working directory or add them to your Python pa
 
 ## Usage
 
-### With CIQA (standard path)
+### With CIQA
 
 ```python
 from CIQA import CIQA
