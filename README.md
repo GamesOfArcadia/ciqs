@@ -7,7 +7,7 @@ by [arcadialab.fr](https://arcadialab.fr)
 
 ## Description
 
-**CIQA** is an analytic quantum error correction encoder. Each logical qubit is encoded into 5 physical data qubits using a strict [[5,1,3]] perfect quantum code, with 2 ancilla qudits per logical block for syndrome extraction. Encoding angles, syndrome thresholds, and correction operators are produced by closed-form derivation, with no free parameters. 
+**CIQA** is an analytic quantum error correction code. Each logical qubit is encoded into 5 physical data qubits using a strict [[5,1,3]] perfect quantum code, with 2 ancilla qudits per logical block for syndrome extraction. CIQA is not a stabilizer code. Its protection is not built from redundancy defeating random errors by majority, it comes from two analytically derived geometric constants which define closed-form error floors for two independent parity channels. An error either crosses a channel's geometric floor or it doesn't. There is no notion of weight, no minimum-distance decoding, and no threshold that scales with block size in the stabilizer sense.
 
 **CIQS** (CIQM mapper/router + CIQO optimizer) is a fully analytic compilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
