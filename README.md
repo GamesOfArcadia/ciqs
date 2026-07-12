@@ -11,6 +11,28 @@ CIQA is optional in the pipeline, not all architectures need error correction ([
 
 ---
 
+```
+1. Description
+2. Files
+3. Requirements
+4. Usage
+- 4.1 With CIQA
+- 4.2 Without CIQA
+- 4.3 Topologies
+- 4.4 Get Results
+5. CIQA External pipeline integration
+6. Performances
+- 6.1 CIQS - IBM Benchpress
+- 6.2 CIQA - hardware validation
+- 6.3 Hayden-Preskill - combined pipeline validation
+- 6.4 Concatenation
+7. Published work
+8. Contact
+9. License
+```
+ 
+---
+
 ## Description
 
 **CIQA** is an analytic, hardware-agnostic quantum error correction code. Each logical qubit is encoded into 5 physical data qubits based on the [[5,1,3]] perfect quantum code (the distance parameter doesn't apply to CIQA), with 2 ancilla quDits per logical block for syndrome extraction. CIQA is not a stabilizer code. Its protection is not built from redundancy defeating random errors by majority, it comes from two analytically derived geometric constants which define closed-form error floors for two independent parity channels. An error either crosses a channel's geometric floor or it doesn't. There is no notion of weight, no minimum-distance decoding, and no threshold that scales with block size in the stabilizer sense.
@@ -101,7 +123,7 @@ CouplingMap.grid(rows, cols)
 CouplingMap.from_edges(edge_list)
 ```
 
-### Results
+### Get Results
 
 ```python
 print(result.swap_count)        # SWAPs inserted by router
@@ -150,7 +172,7 @@ The downstream router may require additional qubits for SWAP insertion depending
 
 ## Performance
 
-### CIQS — IBM Benchpress
+### CIQS - IBM Benchpress
 
 The full IBM Benchpress suite (892 tests, circuits up to 930 qubits) was run with CIQS on a Ryzen 5 / 32GB machine, against Qiskit's published results on a Ryzen 9 / 128GB machine.
 
