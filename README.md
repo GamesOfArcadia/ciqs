@@ -116,7 +116,9 @@ processor = result.to_perceval()
 
 For a complete end-to-end example including QPU submission, see `page_curve_ibm_experiment_v5.py`.
 
-### External pipeline integration
+---
+
+### CIQA External pipeline integration
 
 `ciqa.encode()` returns a dict with four keys:
 
