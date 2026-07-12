@@ -13,7 +13,7 @@ CIQA is optional in the pipeline, not all architectures need error correction ([
 
 ## Description
 
-**CIQA** is an analytic quantum error correction code. Each logical qubit is encoded into 5 physical data qubits based on the [[5,1,3]] perfect quantum code (the distance parameter doesn't apply to CIQA), with 2 ancilla quDits per logical block for syndrome extraction. CIQA is not a stabilizer code. Its protection is not built from redundancy defeating random errors by majority, it comes from two analytically derived geometric constants which define closed-form error floors for two independent parity channels. An error either crosses a channel's geometric floor or it doesn't. There is no notion of weight, no minimum-distance decoding, and no threshold that scales with block size in the stabilizer sense.
+**CIQA** is an analytic, hardware-agnostic quantum error correction code. Each logical qubit is encoded into 5 physical data qubits based on the [[5,1,3]] perfect quantum code (the distance parameter doesn't apply to CIQA), with 2 ancilla quDits per logical block for syndrome extraction. CIQA is not a stabilizer code. Its protection is not built from redundancy defeating random errors by majority, it comes from two analytically derived geometric constants which define closed-form error floors for two independent parity channels. An error either crosses a channel's geometric floor or it doesn't. There is no notion of weight, no minimum-distance decoding, and no threshold that scales with block size in the stabilizer sense.
 
 **CIQM + CIQO** form a fully analytic transpilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
@@ -43,7 +43,6 @@ In order of execution:
 
 - Python 3.9+
 - Qiskit >= 1.0 (for IBM hardware runs and the Qiskit adapter)
-- `qiskit-ibm-runtime` (for live QPU submission)
 - pip install numpy scipy
 
 Place all `.pyd` modules in your working directory or add them to your Python path.
