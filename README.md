@@ -188,7 +188,7 @@ The Hayden-Preskill circuit models black hole evaporation as a quantum system ac
 Paired with CIQA, CIQS compiled and routed the circuit onto IBM Heron r2, a heavy-hex topology that never was a design target for it.
 The routing required 987 SWAP insertions and 120 gate removals across 300 circuits per run. The experiment ran across three IBM backends at two system sizes, with up to 307,200 shots per job.
 The mutual information I₂(D:R) remained within ±0.004 of zero across all runs and all time steps, indicating no measurable noise introduced by the compilation.
-CIQA prevents the decoherence to happen early on, allowing the very first observation of the black hole evaporation past the Page time.
+CIQA prevented the decoherence to happen early on, allowing the very first observation of the black hole evaporation past the Page time.
 The results have been reproduced a dozen times.
 
 ---
