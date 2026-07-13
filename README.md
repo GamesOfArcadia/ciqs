@@ -136,7 +136,7 @@ qasm     = result.to_openqasm()
 processor = result.to_perceval()
 ```
 
-For a complete end-to-end example including QPU submission, see `page_curve_ibm_experiment_v5.py`.
+For a complete end-to-end example including QPU submission, see `practical_exemple_QPU_run.py`.
 
 ---
 
