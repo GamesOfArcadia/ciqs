@@ -39,7 +39,7 @@ CIQA is optional in the pipeline, not all architectures need error correction ([
 
 **CIQM + CIQO** form a fully analytic transpilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
-CIQA encodes first. CIQS receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output.
+CIQA encodes first. CIQO receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and CIQO applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output. *See section 6 for a performance summary and section 7 for all data and published papers.*
 
 Both tools are compiled binaries, free for non-commercial use. Contact for licensing options.
 
@@ -260,4 +260,4 @@ jessy.pensedent@gmail.com
 
 Free for non-commercial use. See `LICENSE` for terms.
 
-(c) Jessy Pensédent -- arcadialab.fr 
+(c) Jessy Pensédent - [arcadialab.fr](https://arcadialab.fr) 
