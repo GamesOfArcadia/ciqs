@@ -37,7 +37,7 @@ by [arcadialab.fr](https://arcadialab.fr)
 
 **CIQM + CIQO** form a fully analytic transpilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
-CIQA encodes first. CIQO receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and CIQO applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output.
+CIQA encodes first. CIQM receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and CIQO applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output.
 
 Both tools are compiled binaries, free for non-commercial use. Contact for licensing options.
 
