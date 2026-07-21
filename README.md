@@ -7,8 +7,6 @@ by [arcadialab.fr](https://arcadialab.fr)
 
 **CIQS** is composed of: **CIQA** (error correction), **CIQM** (mapper & router), and **CIQO** (optimizer)
 
-CIQA is optional in the pipeline, not all architectures need error correction ([See matter qubits Vs photon qubits](https://zenodo.org/records/19143454)).
-
 ---
 
 ```
@@ -39,9 +37,13 @@ CIQA is optional in the pipeline, not all architectures need error correction ([
 
 **CIQM + CIQO** form a fully analytic transpilation pipeline. Every placement, routing, and optimization decision is determined by an exact criterion derived from the circuit structure. No heuristics, no stochastic components, no tunable parameters. The same input produces the same output on every run. Hardware-agnostic, supports qudits of any dimension natively.
 
-CIQA encodes first. CIQO receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and CIQO applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output. *See section 6 for a performance summary and section 7 for all data and published papers.*
+CIQA encodes first. CIQO receives the encoded circuit, isolates the encoding prefix automatically, routes across the target topology, and CIQO applies optimization exclusively to the operational gates outside the protected prefix. A single pipeline from logical circuit to hardware-ready output.
 
 Both tools are compiled binaries, free for non-commercial use. Contact for licensing options.
+
+---
+
+*See section 6 for a performance summary and section 7 for all data and published papers.*
 
 ---
 
@@ -242,6 +244,7 @@ Level 3 is sufficient to run Shor's algorithm. The surface code requires approxi
 - **CIQS vs Qiskit, full Benchpress comparison:** [10.5281/zenodo.19896662](https://zenodo.org/records/19896662)
 - **CIQA, architecture and benchmarks:** [10.5281/zenodo.19405503](https://zenodo.org/records/19405503)
 - **Hayden-Preskill black hole circuit, full dataset:** [10.5281/zenodo.21326186](https://zenodo.org/records/21326186)
+- **Not all architectures need error correction** ([See matter qubits Vs photon qubits](https://zenodo.org/records/19143454))
 
 **All benchmarks data, runners, QPU side data, are attached alongside their respective paper**
 
