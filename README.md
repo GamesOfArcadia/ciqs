@@ -244,7 +244,7 @@ Level 3 is sufficient to run Shor's algorithm. The surface code requires approxi
 - **CIQS vs Qiskit, full Benchpress comparison:** [10.5281/zenodo.19896662](https://zenodo.org/records/19896662)
 - **CIQA, architecture and benchmarks:** [10.5281/zenodo.19405503](https://zenodo.org/records/19405503)
 - **Hayden-Preskill black hole circuit, full dataset:** [10.5281/zenodo.21326186](https://zenodo.org/records/21326186)
-- **Not all architectures need error correction** ([See matter qubits Vs photon qubits](https://zenodo.org/records/19143454))
+- **Not all architectures need error correction:** [10.5281/zenodo.19143453](https://zenodo.org/records/19143454)
 
 **All benchmarks data, runners, QPU side data, are attached alongside their respective paper**
 
